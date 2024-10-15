@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
     <h2>Дячок Максим Андрійович</h2>
     <p>
         Дата народження: 16.07.2005;<br>Місце: м. Сімферополь
@@ -42,15 +41,16 @@
         470 011 осіб.
     </p>
     <br>
-    <a href="https://mkrada.gov.ua/">
-        <img src="city.jpg" alt="Фото міста Миколаїв. Без поняття чому не завантажилось.">
+    <a href="https://mkrada.gov.ua/" id="city-image-container">
+        <img id="city-image" src="city.jpg" alt="Фото міста Миколаїв. Без поняття чому не завантажилось.">
     </a>
     <div class="flex-container">
         <button onclick="addImage()">Додати</button>
-        <button onclick="downscaleImage()">Збільшити</button>
-        <button onclick="upscaleImage()">Зменшити</button>
+        <button onclick="scaleImage(10)">Збільшити</button>
+        <button onclick="scaleImage(-10)">Зменшити</button>
         <button onclick="deleteImage()">Видалити</button>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
