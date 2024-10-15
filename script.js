@@ -4,19 +4,15 @@ const firstStyle = 'modified1'
 const secondStyle = 'modified2'
 
 const image = document.getElementById('city-image')
+const elById = document.getElementById('element4')
+const elByQuery = document.querySelector('li.modified2')
 const imageContainer = document.getElementById('city-image-container')
+
 let width = image.clientWidth
 let imagePresent = true
 
-const changeStyleById = () => {
-    const el = document.getElementById('element4')
-    _changeStyle(el)
-}
-
-const getElementByQuery = () => {
-    const el = document.querySelector('li.query-find')
-    _changeStyle(el)
-}
+const changeStyleById = () => _changeStyle(elById)
+const getElementByQuery = () => _changeStyle(elByQuery)
 
 const scaleImage = (scaleChange) => {
     if (!imagePresent) return
